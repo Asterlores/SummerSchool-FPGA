@@ -1,0 +1,161 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu5p-flva2104-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu5p-flva2104-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 7.783 seconds; current allocated memory: 187.282 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu5p-flva2104-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xcvu5p-flva2104-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+WARNING: [HLS 200-40] Skipped source file 'imgo.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'dst_1280x720.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+WARNING: [HLS 200-40] Skipped source file 'data.txt'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 187.273 MB.
+INFO: [HLS 200-10] Analyzing design file 'Sobel_hls_prj/code/sobel.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 9.537 seconds; current allocated memory: 188.638 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator<<13, false>(ap_int_base<13, false> const&, int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1616:713)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<13, false>::operator<<32, true>(ap_int_base<32, true> const&) const' into 'bool operator<<13, false>(ap_int_base<13, false> const&, int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1616:711)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:293:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:296:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:295:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:295:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:294:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>::read()' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:294:23)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<13, false>::operator++(int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:730:16)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<13, false>& ap_int_base<13, false>::operator+=<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<13, false>::operator++(int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:730:5)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator==<2, false>(ap_int_base<2, false> const&, int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1616:1853)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<2, false>::operator==<32, true>(ap_int_base<32, true> const&) const' into 'bool operator==<2, false>(ap_int_base<2, false> const&, int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1616:1850)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator==<13, false>(ap_int_base<13, false> const&, int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1616:1853)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<13, false>::operator==<32, true>(ap_int_base<32, true> const&) const' into 'bool operator==<13, false>(ap_int_base<13, false> const&, int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1616:1850)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 0ul, 0ul, 0ul> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 0ul, 0ul, 0ul> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 0ul, 0ul, 0ul> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 0ul, 0ul, 0ul> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 0ul, 0ul, 0ul> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 0ul, 0ul, 0ul> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<2, false>::operator++(int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:730:16)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<2, false>& ap_int_base<2, false>::operator+=<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<2, false>::operator++(int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:730:5)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<13, false>::operator++(int)' into 'sobel(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)' (Sobel_hls_prj/code/sobel.cpp:94:48)
+INFO: [HLS 214-131] Inlining function 'bool operator==<2, false>(ap_int_base<2, false> const&, int)' into 'sobel(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)' (Sobel_hls_prj/code/sobel.cpp:145:13)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<2, false>::operator++(int)' into 'sobel(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)' (Sobel_hls_prj/code/sobel.cpp:144:3)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<13, false>::operator++(int)' into 'sobel(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)' (Sobel_hls_prj/code/sobel.cpp:114:46)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<8>, 0ul, 0ul, 0ul> const&)' into 'sobel(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)' (Sobel_hls_prj/code/sobel.cpp:142:8)
+INFO: [HLS 214-131] Inlining function 'bool operator==<13, false>(ap_int_base<13, false> const&, int)' into 'sobel(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)' (Sobel_hls_prj/code/sobel.cpp:137:31)
+INFO: [HLS 214-131] Inlining function 'bool operator==<13, false>(ap_int_base<13, false> const&, int)' into 'sobel(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)' (Sobel_hls_prj/code/sobel.cpp:137:13)
+INFO: [HLS 214-131] Inlining function 'bool operator<<13, false>(ap_int_base<13, false> const&, int)' into 'sobel(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)' (Sobel_hls_prj/code/sobel.cpp:84:36)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<13, false>::operator unsigned long long() const' into 'sobel(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)' (Sobel_hls_prj/code/sobel.cpp:128:41)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<2, false>::operator unsigned long long() const' into 'sobel(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)' (Sobel_hls_prj/code/sobel.cpp:128:36)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<13, false>::operator unsigned long long() const' into 'sobel(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)' (Sobel_hls_prj/code/sobel.cpp:127:41)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<2, false>::operator unsigned long long() const' into 'sobel(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)' (Sobel_hls_prj/code/sobel.cpp:127:36)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<13, false>::operator unsigned long long() const' into 'sobel(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)' (Sobel_hls_prj/code/sobel.cpp:126:41)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<2, false>::operator unsigned long long() const' into 'sobel(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)' (Sobel_hls_prj/code/sobel.cpp:126:36)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<13, false>::operator unsigned long long() const' into 'sobel(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)' (Sobel_hls_prj/code/sobel.cpp:124:21)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<2, false>::operator unsigned long long() const' into 'sobel(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)' (Sobel_hls_prj/code/sobel.cpp:124:16)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<13, false>::operator unsigned long long() const' into 'sobel(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)' (Sobel_hls_prj/code/sobel.cpp:121:21)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<2, false>::operator unsigned long long() const' into 'sobel(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)' (Sobel_hls_prj/code/sobel.cpp:121:16)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::operator unsigned long long() const' into 'sobel(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)' (Sobel_hls_prj/code/sobel.cpp:121:36)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>::read()' into 'sobel(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)' (Sobel_hls_prj/code/sobel.cpp:120:18)
+INFO: [HLS 214-131] Inlining function 'bool operator<<13, false>(ap_int_base<13, false> const&, int)' into 'sobel(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)' (Sobel_hls_prj/code/sobel.cpp:118:9)
+INFO: [HLS 214-131] Inlining function 'bool operator<<13, false>(ap_int_base<13, false> const&, int)' into 'sobel(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)' (Sobel_hls_prj/code/sobel.cpp:114:38)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<2, false>::operator unsigned long long() const' into 'sobel(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)' (Sobel_hls_prj/code/sobel.cpp:112:16)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<2, false>::operator unsigned long long() const' into 'sobel(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)' (Sobel_hls_prj/code/sobel.cpp:112:39)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<2, false>::operator unsigned long long() const' into 'sobel(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)' (Sobel_hls_prj/code/sobel.cpp:111:16)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<2, false>::operator unsigned long long() const' into 'sobel(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)' (Sobel_hls_prj/code/sobel.cpp:111:39)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<2, false>::operator unsigned long long() const' into 'sobel(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)' (Sobel_hls_prj/code/sobel.cpp:110:16)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<2, false>::operator unsigned long long() const' into 'sobel(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)' (Sobel_hls_prj/code/sobel.cpp:110:39)
+INFO: [HLS 214-131] Inlining function 'bool operator==<2, false>(ap_int_base<2, false> const&, int)' into 'sobel(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)' (Sobel_hls_prj/code/sobel.cpp:105:18)
+INFO: [HLS 214-131] Inlining function 'bool operator==<2, false>(ap_int_base<2, false> const&, int)' into 'sobel(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)' (Sobel_hls_prj/code/sobel.cpp:101:18)
+INFO: [HLS 214-131] Inlining function 'bool operator==<2, false>(ap_int_base<2, false> const&, int)' into 'sobel(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)' (Sobel_hls_prj/code/sobel.cpp:97:12)
+INFO: [HLS 214-131] Inlining function 'bool operator<<13, false>(ap_int_base<13, false> const&, int)' into 'sobel(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)' (Sobel_hls_prj/code/sobel.cpp:94:36)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<13, false>::operator++(int)' into 'sobel(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)' (Sobel_hls_prj/code/sobel.cpp:84:44)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<13, false>::operator unsigned long long() const' into 'sobel(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)' (Sobel_hls_prj/code/sobel.cpp:90:17)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::operator unsigned long long() const' into 'sobel(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)' (Sobel_hls_prj/code/sobel.cpp:90:32)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>::read()' into 'sobel(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)' (Sobel_hls_prj/code/sobel.cpp:89:16)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<13, false>::operator unsigned long long() const' into 'sobel(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)' (Sobel_hls_prj/code/sobel.cpp:88:16)
+INFO: [HLS 214-178] Inlining function 'Gradient_X(unsigned char (*) [3])' into 'sobel3x3_kernel(unsigned char (*) [3])' (Sobel_hls_prj/code/sobel.cpp:50:0)
+INFO: [HLS 214-178] Inlining function 'Gradient_Y(unsigned char (*) [3])' into 'sobel3x3_kernel(unsigned char (*) [3])' (Sobel_hls_prj/code/sobel.cpp:50:0)
+INFO: [HLS 214-178] Inlining function 'sobel3x3_kernel(unsigned char (*) [3])' into 'sobel(hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<8>, 0ul, 0ul, 0ul>, 0>&, int, int)' (Sobel_hls_prj/code/sobel.cpp:63:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 6.596 seconds; current allocated memory: 191.436 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.063 seconds; current allocated memory: 191.437 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.258 seconds; current allocated memory: 199.467 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.203 seconds; current allocated memory: 209.541 MB.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-2' in function 'sobel' automatically.
+INFO: [XFORM 203-101] Partitioning array 'WindowBuffer' (Sobel_hls_prj/code/sobel.cpp:77) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'LineBuffer' (Sobel_hls_prj/code/sobel.cpp:74) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'WindowBuffer' (Sobel_hls_prj/code/sobel.cpp:77) in dimension 2 completely.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (Sobel_hls_prj/code/sobel.cpp:82:23) to (Sobel_hls_prj/code/sobel.cpp:114:21) in function 'sobel'... converting 4 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.387 seconds; current allocated memory: 241.703 MB.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_94_2' (Sobel_hls_prj/code/sobel.cpp:82:23) in function 'sobel' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+INFO: [HLS 200-472] Inferring partial write operation for 'LineBuffer[0]' (Sobel_hls_prj/code/sobel.cpp:88:21)
+INFO: [HLS 200-472] Inferring partial write operation for 'LineBuffer[1]' (Sobel_hls_prj/code/sobel.cpp:90:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'LineBuffer[0]' (Sobel_hls_prj/code/sobel.cpp:124:26)
+INFO: [HLS 200-472] Inferring partial write operation for 'LineBuffer[0]' (Sobel_hls_prj/code/sobel.cpp:121:26)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.321 seconds; current allocated memory: 240.812 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'sobel' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sobel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'Loop 1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_84_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'VITIS_LOOP_84_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_114_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'VITIS_LOOP_114_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.289 seconds; current allocated memory: 241.584 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.292 seconds; current allocated memory: 242.565 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sobel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/src_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/src_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/src_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/src_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/dst_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/dst_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/dst_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/dst_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/rows' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/cols' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'sobel' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'rows', 'cols' and 'return' to AXI-Lite port CTRL.
+INFO: [RTGEN 206-100] Generating core module 'mux_32_8_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_42_8_1_1': 12 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sobel'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.465 seconds; current allocated memory: 244.332 MB.
+INFO: [RTMG 210-278] Implementing memory 'sobel_LineBuffer_0_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.527 seconds; current allocated memory: 254.242 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for sobel.
+INFO: [VLOG 209-307] Generating Verilog RTL for sobel.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 169.38 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 5 seconds. CPU system time: 0 seconds. Elapsed time: 21.188 seconds; current allocated memory: 254.514 MB.
+INFO: [HLS 200-112] Total CPU user time: 7 seconds. Total CPU system time: 2 seconds. Total elapsed time: 23.818 seconds; peak allocated memory: 254.242 MB.
